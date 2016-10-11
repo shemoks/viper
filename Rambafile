@@ -1,0 +1,20 @@
+### Headers settings
+company: mozy
+
+### Xcode project settings
+project_name: Events
+xcodeproj_path: Events.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Events
+
+### Dependencies settings section
+podfile_path: Podfile
+project_file_path: Events/Modules
+project_group_path: Events/Modules
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
