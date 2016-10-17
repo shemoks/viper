@@ -37,7 +37,7 @@
                 <outlet property="dayLabel" destination="eB3-1r-RCp" id="E4a-dk-pyR"/>
                 <outlet property="eventLabel" destination="jkS-zo-u3S" id="sdo-Q0-WqM"/>
             </connections>
-            <point key="canvasLocation" x="91.5" y="-309"/>
+            <point key="canvasLocation" x="-7" y="-614"/>
         </tableViewCell>
     </objects>
 </document>

@@ -10,24 +10,20 @@ import UIKit
 import RealmSwift
 
 class ListViewController: UIViewController, ListViewInput {
-
+    
     @IBOutlet weak var tableView: UITableView!
     var presenter: ListModuleInput!
-
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-       tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+        tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         tableView.register(UINib(nibName: "TodayCell", bundle: nil), forCellReuseIdentifier: "TodayCell")
-       presenter.handleViewDidLoad()
+        presenter.handleViewDidLoad()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-//        tableView.indexPathsForSelectedRows?.forEach {
-//            tableView.deselectRow(at: $0, animated: true)
-//        }
         presenter.handleViewDidLoad()
         reloadData()
     }
@@ -37,19 +33,19 @@ class ListViewController: UIViewController, ListViewInput {
     }
     
     @IBAction func receiveAddEventTap(_ sender: AnyObject) {
-      presenter.handleAddEventTap(getViewController: self)
+        presenter.handleAddEventTap(getViewController: self)
     }
     
     func reloadData() {
         tableView?.reloadData()
     }
-
+    
 }
 
 // MARK: - UITableViewDataSource
 
 extension ListViewController: UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
@@ -75,9 +71,9 @@ extension ListViewController: UITableViewDataSource {
             return 0
         }
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
+        
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodayCell") as? TodayViewCell
@@ -92,12 +88,3 @@ extension ListViewController: UITableViewDataSource {
     
 }
 
-// MARK: - UITableViewDelegate
-
-//extension PatientsViewController: UITableViewDelegate {
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        presenter.handleDidSelectItem(at: indexPath)
-//    }
-    
-//}

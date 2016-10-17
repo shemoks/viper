@@ -29,7 +29,7 @@
             <connections>
                 <outlet property="eventLabel" destination="AWC-GT-9Cv" id="6Tl-dT-kP4"/>
             </connections>
-            <point key="canvasLocation" x="-45.5" y="-1473"/>
+            <point key="canvasLocation" x="-89" y="-1839"/>
         </tableViewCell>
     </objects>
 </document>

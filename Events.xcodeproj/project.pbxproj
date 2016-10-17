@@ -26,7 +26,6 @@
 		9A66F9EF1DAD346A00D88583 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C91DAD346A00D88583 /* AddViewController.swift */; };
 		9A66F9F01DAD346A00D88583 /* AddViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9CA1DAD346A00D88583 /* AddViewInput.swift */; };
 		9A66F9F11DAD346A00D88583 /* AddViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9CB1DAD346A00D88583 /* AddViewOutput.swift */; };
-		9A66F9FE1DAD346B00D88583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9E01DAD346A00D88583 /* ViewController.swift */; };
 		9A66FA001DAD359400D88583 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9FF1DAD359400D88583 /* Event.swift */; };
 		9A66FA051DAD365000D88583 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA011DAD365000D88583 /* CustomCell.xib */; };
 		9A66FA061DAD365000D88583 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66FA021DAD365000D88583 /* TableViewCell.swift */; };
@@ -47,7 +46,6 @@
 		9A66FA251DAD3BAA00D88583 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66FA241DAD3BAA00D88583 /* DateHelper.swift */; };
 		9A66FA281DAD3C1C00D88583 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA261DAD3C1C00D88583 /* Add.storyboard */; };
 		9A66FA291DAD3C1C00D88583 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA271DAD3C1C00D88583 /* List.storyboard */; };
-		9A66FA2B1DAE486B00D88583 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66FA2A1DAE486B00D88583 /* RootWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +92,6 @@
 		9A66F9C91DAD346A00D88583 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		9A66F9CA1DAD346A00D88583 /* AddViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewInput.swift; sourceTree = "<group>"; };
 		9A66F9CB1DAD346A00D88583 /* AddViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewOutput.swift; sourceTree = "<group>"; };
-		9A66F9E01DAD346A00D88583 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A66F9FF1DAD359400D88583 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9A66FA011DAD365000D88583 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		9A66FA021DAD365000D88583 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -115,7 +112,6 @@
 		9A66FA241DAD3BAA00D88583 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		9A66FA261DAD3C1C00D88583 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		9A66FA271DAD3C1C00D88583 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
-		9A66FA2A1DAE486B00D88583 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		DD6B34DC86F960624D6F57AF /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,8 +209,6 @@
 				9A66F9B81DAD346A00D88583 /* Models */,
 				9A66F9B91DAD346A00D88583 /* Modules */,
 				9A66F9DF1DAD346A00D88583 /* Storyboards */,
-				9A66F9E01DAD346A00D88583 /* ViewController.swift */,
-				9A66FA2A1DAE486B00D88583 /* RootWireframe.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -565,7 +559,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A66FA2B1DAE486B00D88583 /* RootWireframe.swift in Sources */,
 				9A66FA191DAD3A5100D88583 /* ListInteractor.swift in Sources */,
 				9A66F9EE1DAD346A00D88583 /* AddRouterInput.swift in Sources */,
 				9A66FA101DAD39AD00D88583 /* ListViewInput.swift in Sources */,
@@ -584,7 +577,6 @@
 				9A66FA251DAD3BAA00D88583 /* DateHelper.swift in Sources */,
 				9A66F9EC1DAD346A00D88583 /* AddPresenter.swift in Sources */,
 				9A66FA221DAD3B3A00D88583 /* ListRouter.swift in Sources */,
-				9A66F9FE1DAD346B00D88583 /* ViewController.swift in Sources */,
 				9A66F9E71DAD346A00D88583 /* AddInitializer.swift in Sources */,
 				9A66FA111DAD39AD00D88583 /* ListViewOutput.swift in Sources */,
 				9A66FA081DAD365000D88583 /* TodayViewCell.swift in Sources */,

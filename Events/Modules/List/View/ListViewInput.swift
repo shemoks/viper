@@ -8,11 +8,6 @@
 
 protocol ListViewInput: class {
 
-    /**
-        @author Shemshur Oksana
-        Setup initial state of the view
-    */
-
-  //  func setupInitialState()
     func reloadData()
+    
 }
