@@ -7,31 +7,49 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class AddViewController: UIViewController, AddViewInput {
+    
+    
+    @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
     @IBOutlet weak var picker: UIDatePicker!
     @IBOutlet weak var dateLabel: UITextField!
     @IBOutlet weak var eventLabel: UITextField!
-    @IBAction func saveClick(_ sender: AnyObject) {
-        getData()
-    }
-    var presenter: AddModuleInput!
     
-    @IBAction func pickerClick(_ sender: AnyObject) {
-        dateLabel.text = presenter.tapForPicker(currentDay: picker.date)
-    }
+    @IBOutlet weak var buttonSave: UIBarButtonItem!
+//    @IBAction func saveClick(_ sender: AnyObject) {
+//        getData()
+//    }
+    var presenter: AddModuleInput!
+    var disposeBag = DisposeBag()
+    
+    lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter
+    }()
     
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        //output.viewIsReady()
-    }
-    
-    // MARK: AddViewInput
-    func getData() {
-        let date = DateHelper.getStringFromDate(date: picker.date)
-        let dateForBase = DateHelper.getDateFromString(date: date)
-        presenter.setData(event: eventLabel.text!, dates: dateForBase)
+        
+        tapGestureRecognizer.rx.event.asDriver().drive(onNext: { [unowned self] _ in self.view.endEditing(true)
+            }).addDisposableTo(disposeBag)
+        
+        picker.rx.date.asDriver()
+            .map {
+                self.dateFormatter.string(from: $0)
+            }
+            .drive(onNext: {
+                self.dateLabel.text = "\($0)"
+            }).addDisposableTo(disposeBag)
+        
+        buttonSave.rx.tap.asDriver().drive(onNext: {
+             self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!)
+        }).addDisposableTo(disposeBag)
     }
     
 }

@@ -15,7 +15,7 @@ class DateHelper {
         let today = Date()
         let todayString = getStringFromDate(date: today)
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
+            dateFormatter.dateStyle = .medium
             var newDate = dateFormatter.date(from: todayString)!
             if dateFormatter.date(from: date) != nil {
             newDate = dateFormatter.date(from: date)!
@@ -25,7 +25,7 @@ class DateHelper {
     
     static func getStringFromDate(date: Date) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateStyle = .medium
         let newDate = dateFormatter.string(from: date)
         return newDate
     }
