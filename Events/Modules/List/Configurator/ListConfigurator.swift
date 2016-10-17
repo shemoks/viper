@@ -9,6 +9,7 @@
 import UIKit
 
 class ListModuleConfigurator {
+    
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 

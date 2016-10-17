@@ -13,7 +13,7 @@ final class TableViewCell: UITableViewCell{
     @IBOutlet weak var eventLabel: UILabel!
     
     func configure(with event: Event) {
-        dayLabel.text = DateHelper.getStringDateDay(date: event.dueDate)
+        dayLabel.text = DateHelper.getStringFromDate(date: event.dueDate)
         eventLabel.text = event.name
     }
 }

@@ -1,17 +1,18 @@
 //
-//  AddAddViewInput.swift
+//  AddAddViewOutput.swift
 //  Events
 //
 //  Created by Shemshur Oksana on 11/10/2016.
 //  Copyright © 2016 mozy. All rights reserved.
 //
+import Foundation
 
-protocol AddViewInput: class {
+protocol AddViewOutput {
 
     /**
         @author Shemshur Oksana
-        Setup initial state of the view
+        Notify presenter that view is ready
     */
 
-    func setupInitialState()
+ 
 }

@@ -10,7 +10,7 @@ import Foundation
 
 protocol ListModuleInput: class {
     // MARK: Actions
-    func handleAddEventTap()
+    func handleAddEventTap(getViewController: ListViewController)
     
     // MARK: View life cycle
     func handleViewDidLoad()
@@ -18,11 +18,13 @@ protocol ListModuleInput: class {
     // MARK: Table View
     func numberOfEvents(inSection section: Int) -> Int
     func eventList(for indexPath: IndexPath) -> Event
+    func eventListWeek(for indexPath: IndexPath) -> Event
 }
 
 protocol ListInteractorOutput: class {
     
     func setEvents(_events: [Event])
+    func setEventsWeek(_events: [Event])
 }
 
 

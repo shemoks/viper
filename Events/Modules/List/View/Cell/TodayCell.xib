@@ -8,11 +8,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayCell" rowHeight="44" id="ODJ-qV-R3z" customClass="TodayViewCell" customModule="EventPlanner" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TodayCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayCell" rowHeight="44" id="ODJ-qV-R3z" customClass="TodayViewCell" customModule="Events" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="301" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ODJ-qV-R3z" id="Esx-Hl-ZIf">
-                <frame key="frameInset" width="301" height="44"/>
+                <frame key="frameInset" width="301" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWC-GT-9Cv">
@@ -22,9 +22,8 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="AWC-GT-9Cv" secondAttribute="bottom" constant="11" id="Lwb-vc-wFv"/>
-                    <constraint firstItem="AWC-GT-9Cv" firstAttribute="leading" secondItem="Esx-Hl-ZIf" secondAttribute="leading" id="Vtt-O0-V1d"/>
-                    <constraint firstItem="AWC-GT-9Cv" firstAttribute="top" secondItem="Esx-Hl-ZIf" secondAttribute="top" constant="11" id="qkd-Rc-Lx6"/>
+                    <constraint firstItem="AWC-GT-9Cv" firstAttribute="centerY" secondItem="Esx-Hl-ZIf" secondAttribute="centerY" id="psj-Vq-tBX"/>
+                    <constraint firstItem="AWC-GT-9Cv" firstAttribute="leading" secondItem="Esx-Hl-ZIf" secondAttribute="leading" constant="12" id="sb9-dU-K2v"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

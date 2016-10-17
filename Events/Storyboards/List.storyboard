@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Events-->
+        <!--List View Controller-->
         <scene sceneID="rN6-Ee-Og0">
             <objects>
-                <viewController id="VbX-hB-K48" customClass="ListViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListController" id="VbX-hB-K48" customClass="ListViewController" customModule="Events" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kto-H6-M1H"/>
                         <viewControllerLayoutGuide type="bottom" id="wdH-V1-ZQV"/>
@@ -20,6 +20,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jOy-I8-uvB">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VbX-hB-K48" id="RhY-Ag-6mf"/>
+                                    <outlet property="delegate" destination="VbX-hB-K48" id="B1w-0Y-RXs"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,6 +46,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Mz-K9-NzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="7Ft-gG-KcX" customClass="ListModuleInitializer" customModule="Events" customModuleProvider="target">
+                    <connections>
+                        <outlet property="listViewController" destination="VbX-hB-K48" id="VkX-d4-OZi"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="804" y="-225.33733133433284"/>
         </scene>

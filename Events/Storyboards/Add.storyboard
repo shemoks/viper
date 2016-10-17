@@ -1,8 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WTt-sT-Kgt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="btL-ki-5Om">
+            <objects>
+                <viewController storyboardIdentifier="AddController" id="WTt-sT-Kgt" customClass="AddViewController" customModule="Events" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gf9-DX-uHo"/>
+                        <viewControllerLayoutGuide type="bottom" id="pqq-jo-geT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8qb-Lb-ayG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFr-dc-GlZ">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-7l-XgL">
+                                        <frame key="frameInset" minX="16" minY="8" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nYH-GG-vJ7">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkh-cg-dAd">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12j-wv-laK">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="12j-wv-laK" firstAttribute="top" secondItem="Bkh-cg-dAd" secondAttribute="bottom" constant="8" id="B8w-Pf-5fx"/>
+                                    <constraint firstAttribute="height" constant="147" id="E8N-Ra-fvd"/>
+                                    <constraint firstItem="Bkh-cg-dAd" firstAttribute="top" secondItem="nYH-GG-vJ7" secondAttribute="bottom" constant="8" id="Fby-fm-t5r"/>
+                                    <constraint firstItem="12j-wv-laK" firstAttribute="top" secondItem="Bkh-cg-dAd" secondAttribute="bottom" constant="8" id="Fgv-Yd-Nyi"/>
+                                    <constraint firstItem="jDY-7l-XgL" firstAttribute="top" secondItem="VFr-dc-GlZ" secondAttribute="top" constant="8" id="Fh8-E5-UDE"/>
+                                    <constraint firstItem="nYH-GG-vJ7" firstAttribute="top" secondItem="jDY-7l-XgL" secondAttribute="bottom" constant="8" id="HQH-zs-UJA"/>
+                                    <constraint firstItem="Bkh-cg-dAd" firstAttribute="top" secondItem="nYH-GG-vJ7" secondAttribute="bottom" constant="8" id="NKa-Rx-JZX"/>
+                                    <constraint firstItem="Bkh-cg-dAd" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" constant="16" id="VYD-vq-Pdu"/>
+                                    <constraint firstItem="12j-wv-laK" firstAttribute="top" secondItem="Bkh-cg-dAd" secondAttribute="bottom" constant="8" id="eso-vW-mJ2"/>
+                                    <constraint firstAttribute="trailing" secondItem="12j-wv-laK" secondAttribute="trailing" id="iIM-BU-LsW"/>
+                                    <constraint firstAttribute="trailing" secondItem="nYH-GG-vJ7" secondAttribute="trailing" id="las-Km-pAA"/>
+                                    <constraint firstItem="jDY-7l-XgL" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" constant="16" id="nwt-4O-xT4"/>
+                                    <constraint firstItem="nYH-GG-vJ7" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" id="pnd-FB-F2M"/>
+                                    <constraint firstItem="nYH-GG-vJ7" firstAttribute="top" secondItem="jDY-7l-XgL" secondAttribute="bottom" constant="8" id="wvz-aA-biO"/>
+                                    <constraint firstItem="12j-wv-laK" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" id="ylT-8t-ayf"/>
+                                </constraints>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-f9-HSg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="AoO-2m-IaV"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="497969427.600411">
+                                    <!--2016-10-12 12:50:27 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="pickerClick:" destination="WTt-sT-Kgt" eventType="valueChanged" id="MJY-Mg-zcJ"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VFr-dc-GlZ" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" id="68q-Ti-HEb"/>
+                            <constraint firstItem="VFr-dc-GlZ" firstAttribute="top" secondItem="Gf9-DX-uHo" secondAttribute="bottom" constant="45" id="JRG-kM-VET"/>
+                            <constraint firstAttribute="trailing" secondItem="XeC-f9-HSg" secondAttribute="trailing" id="JwZ-ii-pil"/>
+                            <constraint firstAttribute="trailing" secondItem="VFr-dc-GlZ" secondAttribute="trailing" id="Sj6-Pi-hHH"/>
+                            <constraint firstItem="XeC-f9-HSg" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" id="djm-TY-ZNd"/>
+                            <constraint firstItem="XeC-f9-HSg" firstAttribute="top" secondItem="VFr-dc-GlZ" secondAttribute="bottom" constant="31" id="jxS-sz-leM"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Add event" id="aHa-4I-HYt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ByH-ID-pXf">
+                            <connections>
+                                <action selector="saveClick:" destination="WTt-sT-Kgt" id="a8s-gI-Ul9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="12j-wv-laK" id="hGQ-ey-2lj"/>
+                        <outlet property="eventLabel" destination="nYH-GG-vJ7" id="rD3-VB-WvC"/>
+                        <outlet property="picker" destination="XeC-f9-HSg" id="xIU-JB-6fE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okZ-eu-x77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="GWu-8N-CXb" customClass="AddModuleInitializer" customModule="Events" customModuleProvider="target">
+                    <connections>
+                        <outlet property="addViewController" destination="WTt-sT-Kgt" id="1D6-jH-5LI"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="63" y="-134"/>
+        </scene>
+    </scenes>
 </document>

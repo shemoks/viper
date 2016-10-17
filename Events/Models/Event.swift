@@ -17,5 +17,5 @@ struct TodoItem {
 
 class Event: Object {
     dynamic var name = ""
-    dynamic var dueDate: NSDate = NSDate()
+    dynamic var dueDate: Date = Date()
 }

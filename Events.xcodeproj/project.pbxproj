@@ -21,11 +21,11 @@
 		9A66F9EA1DAD346A00D88583 /* AddInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C11DAD346A00D88583 /* AddInteractorOutput.swift */; };
 		9A66F9EB1DAD346A00D88583 /* AddModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C31DAD346A00D88583 /* AddModuleInput.swift */; };
 		9A66F9EC1DAD346A00D88583 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C41DAD346A00D88583 /* AddPresenter.swift */; };
-		9A66F9ED1DAD346A00D88583 /* AddRouter 17-46-47-989.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C61DAD346A00D88583 /* AddRouter 17-46-47-989.swift */; };
-		9A66F9EE1DAD346A00D88583 /* AddRouterInput 17-46-47-965.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C71DAD346A00D88583 /* AddRouterInput 17-46-47-965.swift */; };
-		9A66F9EF1DAD346A00D88583 /* AddViewController 17-46-47-956.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C91DAD346A00D88583 /* AddViewController 17-46-47-956.swift */; };
-		9A66F9F01DAD346A00D88583 /* AddViewInput 17-46-47-970.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9CA1DAD346A00D88583 /* AddViewInput 17-46-47-970.swift */; };
-		9A66F9F11DAD346A00D88583 /* AddViewOutput 17-46-47-975.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9CB1DAD346A00D88583 /* AddViewOutput 17-46-47-975.swift */; };
+		9A66F9ED1DAD346A00D88583 /* AddRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C61DAD346A00D88583 /* AddRouter.swift */; };
+		9A66F9EE1DAD346A00D88583 /* AddRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C71DAD346A00D88583 /* AddRouterInput.swift */; };
+		9A66F9EF1DAD346A00D88583 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9C91DAD346A00D88583 /* AddViewController.swift */; };
+		9A66F9F01DAD346A00D88583 /* AddViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9CA1DAD346A00D88583 /* AddViewInput.swift */; };
+		9A66F9F11DAD346A00D88583 /* AddViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9CB1DAD346A00D88583 /* AddViewOutput.swift */; };
 		9A66F9FE1DAD346B00D88583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9E01DAD346A00D88583 /* ViewController.swift */; };
 		9A66FA001DAD359400D88583 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9FF1DAD359400D88583 /* Event.swift */; };
 		9A66FA051DAD365000D88583 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA011DAD365000D88583 /* CustomCell.xib */; };
@@ -47,6 +47,7 @@
 		9A66FA251DAD3BAA00D88583 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66FA241DAD3BAA00D88583 /* DateHelper.swift */; };
 		9A66FA281DAD3C1C00D88583 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA261DAD3C1C00D88583 /* Add.storyboard */; };
 		9A66FA291DAD3C1C00D88583 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA271DAD3C1C00D88583 /* List.storyboard */; };
+		9A66FA2B1DAE486B00D88583 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66FA2A1DAE486B00D88583 /* RootWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,11 +89,11 @@
 		9A66F9C11DAD346A00D88583 /* AddInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInteractorOutput.swift; sourceTree = "<group>"; };
 		9A66F9C31DAD346A00D88583 /* AddModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddModuleInput.swift; sourceTree = "<group>"; };
 		9A66F9C41DAD346A00D88583 /* AddPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
-		9A66F9C61DAD346A00D88583 /* AddRouter 17-46-47-989.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddRouter 17-46-47-989.swift"; sourceTree = "<group>"; };
-		9A66F9C71DAD346A00D88583 /* AddRouterInput 17-46-47-965.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddRouterInput 17-46-47-965.swift"; sourceTree = "<group>"; };
-		9A66F9C91DAD346A00D88583 /* AddViewController 17-46-47-956.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddViewController 17-46-47-956.swift"; sourceTree = "<group>"; };
-		9A66F9CA1DAD346A00D88583 /* AddViewInput 17-46-47-970.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddViewInput 17-46-47-970.swift"; sourceTree = "<group>"; };
-		9A66F9CB1DAD346A00D88583 /* AddViewOutput 17-46-47-975.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddViewOutput 17-46-47-975.swift"; sourceTree = "<group>"; };
+		9A66F9C61DAD346A00D88583 /* AddRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRouter.swift; sourceTree = "<group>"; };
+		9A66F9C71DAD346A00D88583 /* AddRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRouterInput.swift; sourceTree = "<group>"; };
+		9A66F9C91DAD346A00D88583 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		9A66F9CA1DAD346A00D88583 /* AddViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewInput.swift; sourceTree = "<group>"; };
+		9A66F9CB1DAD346A00D88583 /* AddViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewOutput.swift; sourceTree = "<group>"; };
 		9A66F9E01DAD346A00D88583 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A66F9FF1DAD359400D88583 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9A66FA011DAD365000D88583 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		9A66FA241DAD3BAA00D88583 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		9A66FA261DAD3C1C00D88583 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		9A66FA271DAD3C1C00D88583 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		9A66FA2A1DAE486B00D88583 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		DD6B34DC86F960624D6F57AF /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +214,7 @@
 				9A66F9B91DAD346A00D88583 /* Modules */,
 				9A66F9DF1DAD346A00D88583 /* Storyboards */,
 				9A66F9E01DAD346A00D88583 /* ViewController.swift */,
+				9A66FA2A1DAE486B00D88583 /* RootWireframe.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -277,8 +280,8 @@
 		9A66F9C51DAD346A00D88583 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				9A66F9C61DAD346A00D88583 /* AddRouter 17-46-47-989.swift */,
-				9A66F9C71DAD346A00D88583 /* AddRouterInput 17-46-47-965.swift */,
+				9A66F9C61DAD346A00D88583 /* AddRouter.swift */,
+				9A66F9C71DAD346A00D88583 /* AddRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -286,9 +289,9 @@
 		9A66F9C81DAD346A00D88583 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9A66F9C91DAD346A00D88583 /* AddViewController 17-46-47-956.swift */,
-				9A66F9CA1DAD346A00D88583 /* AddViewInput 17-46-47-970.swift */,
-				9A66F9CB1DAD346A00D88583 /* AddViewOutput 17-46-47-975.swift */,
+				9A66F9C91DAD346A00D88583 /* AddViewController.swift */,
+				9A66F9CA1DAD346A00D88583 /* AddViewInput.swift */,
+				9A66F9CB1DAD346A00D88583 /* AddViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,20 +565,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A66FA2B1DAE486B00D88583 /* RootWireframe.swift in Sources */,
 				9A66FA191DAD3A5100D88583 /* ListInteractor.swift in Sources */,
-				9A66F9EE1DAD346A00D88583 /* AddRouterInput 17-46-47-965.swift in Sources */,
+				9A66F9EE1DAD346A00D88583 /* AddRouterInput.swift in Sources */,
 				9A66FA101DAD39AD00D88583 /* ListViewInput.swift in Sources */,
 				9A66FA1F1DAD3A8F00D88583 /* ListPresenter.swift in Sources */,
 				9A66F9E81DAD346A00D88583 /* AddInteractor.swift in Sources */,
 				9A66FA061DAD365000D88583 /* TableViewCell.swift in Sources */,
-				9A66F9F01DAD346A00D88583 /* AddViewInput 17-46-47-970.swift in Sources */,
+				9A66F9F01DAD346A00D88583 /* AddViewInput.swift in Sources */,
 				9A66FA0D1DAD396A00D88583 /* ListViewController.swift in Sources */,
 				9A66FA1E1DAD3A8F00D88583 /* ListModuleInput.swift in Sources */,
 				9A66FA001DAD359400D88583 /* Event.swift in Sources */,
 				9A66F9E61DAD346A00D88583 /* AddConfigurator.swift in Sources */,
 				9A66F9EB1DAD346A00D88583 /* AddModuleInput.swift in Sources */,
-				9A66F9ED1DAD346A00D88583 /* AddRouter 17-46-47-989.swift in Sources */,
-				9A66F9F11DAD346A00D88583 /* AddViewOutput 17-46-47-975.swift in Sources */,
+				9A66F9ED1DAD346A00D88583 /* AddRouter.swift in Sources */,
+				9A66F9F11DAD346A00D88583 /* AddViewOutput.swift in Sources */,
 				9A66FA151DAD3A0B00D88583 /* ListInitializer.swift in Sources */,
 				9A66FA251DAD3BAA00D88583 /* DateHelper.swift in Sources */,
 				9A66F9EC1DAD346A00D88583 /* AddPresenter.swift in Sources */,
@@ -591,7 +595,7 @@
 				9A66F9EA1DAD346A00D88583 /* AddInteractorOutput.swift in Sources */,
 				9A66FA1B1DAD3A5100D88583 /* ListInteractorOutput.swift in Sources */,
 				9A66FA231DAD3B3A00D88583 /* ListRouterInput.swift in Sources */,
-				9A66F9EF1DAD346A00D88583 /* AddViewController 17-46-47-956.swift in Sources */,
+				9A66F9EF1DAD346A00D88583 /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,10 +26,10 @@ class AddModuleConfigurator {
         presenter.router = router
 
         let interactor = AddInteractor()
-        interactor.output = presenter
+        interactor.presenter = presenter
 
         presenter.interactor = interactor
-        viewController.output = presenter
+        viewController.presenter = presenter
     }
 
 }

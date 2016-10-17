@@ -11,5 +11,6 @@ import Foundation
 protocol ListInteractorInput: class {
     
 func getEvents()
+func getEventsToTheNextWeek()
     
 }
