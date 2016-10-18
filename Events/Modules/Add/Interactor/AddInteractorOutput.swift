@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AddInteractorOutput: class {
-  func alert()
+  
 }

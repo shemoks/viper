@@ -33,5 +33,4 @@ class ListModuleConfigurator {
         viewController.presenter = presenter
         router.transitionHandler = viewController
     }
-
 }

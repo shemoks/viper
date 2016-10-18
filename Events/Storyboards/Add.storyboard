@@ -68,14 +68,25 @@
                                     <!--2016-10-12 12:50:27 +0000-->
                                 </date>
                             </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="enter description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0AC-pz-Uxx">
+                                <color key="backgroundColor" red="0.94901960780000005" green="1" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gTI-wo-zxJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VFr-dc-GlZ" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" id="68q-Ti-HEb"/>
+                            <constraint firstItem="0AC-pz-Uxx" firstAttribute="top" secondItem="XeC-f9-HSg" secondAttribute="bottom" constant="8" id="DCc-it-duY"/>
                             <constraint firstAttribute="trailing" secondItem="XeC-f9-HSg" secondAttribute="trailing" id="JwZ-ii-pil"/>
                             <constraint firstAttribute="trailing" secondItem="VFr-dc-GlZ" secondAttribute="trailing" id="Sj6-Pi-hHH"/>
+                            <constraint firstAttribute="trailing" secondItem="0AC-pz-Uxx" secondAttribute="trailing" constant="10" id="Tpu-Xc-1JC"/>
                             <constraint firstItem="XeC-f9-HSg" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" id="djm-TY-ZNd"/>
                             <constraint firstItem="XeC-f9-HSg" firstAttribute="top" secondItem="VFr-dc-GlZ" secondAttribute="bottom" constant="31" id="jxS-sz-leM"/>
+                            <constraint firstItem="0AC-pz-Uxx" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" constant="10" id="seZ-6K-9un"/>
                             <constraint firstItem="VFr-dc-GlZ" firstAttribute="top" secondItem="Gf9-DX-uHo" secondAttribute="bottom" constant="45" id="vaz-XN-UvX"/>
                         </constraints>
                     </view>
@@ -87,6 +98,7 @@
                     <connections>
                         <outlet property="buttonSave" destination="ByH-ID-pXf" id="yNz-Pu-6rJ"/>
                         <outlet property="dateLabel" destination="12j-wv-laK" id="hGQ-ey-2lj"/>
+                        <outlet property="descriptionView" destination="0AC-pz-Uxx" id="aLT-7k-Oer"/>
                         <outlet property="eventLabel" destination="nYH-GG-vJ7" id="rD3-VB-WvC"/>
                         <outlet property="picker" destination="XeC-f9-HSg" id="xIU-JB-6fE"/>
                         <outlet property="tapGestureRecognizer" destination="7tO-a7-x81" id="Lva-Lv-oOK"/>
@@ -100,7 +112,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="-415" y="-337"/>
+            <point key="canvasLocation" x="-415.19999999999999" y="-337.78110944527737"/>
         </scene>
     </scenes>
 </document>

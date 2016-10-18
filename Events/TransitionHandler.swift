@@ -12,6 +12,7 @@ import UIKit
 protocol TransitionHandler: class {
    
     func push(viewController: UIViewController)
+    func dismiss()
     
 }
 
@@ -24,8 +25,13 @@ extension TransitionHandler where Self: UIViewController {
         } else {
             present(viewController, animated: true, completion: nil)
         }
-        
-
 }
+    func dismiss(){
+        if let nav = navigationController {
+            nav.popViewController(animated: true)
+        } else if let _ = presentingViewController {
+            dismiss(animated: true, completion: nil)
+        }
+    }
 }
 

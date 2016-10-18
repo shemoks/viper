@@ -8,5 +8,6 @@
 
 protocol AddViewInput: class {
 
-     
+    func showAlert()
+   
 }

@@ -13,12 +13,13 @@ class AddPresenter: AddModuleInput, AddViewOutput, AddInteractorOutput {
     var interactor: AddInteractorInput!
     var router: AddRouterInput!
 
-    func setData(event: String, dates: Date) {
-       interactor.addToDataBase(name: event, date: dates)
-    }
-    
-    func alert(){
-        
+    func setData(event: String, dates: Date, description: String) {
+        let result = interactor.addToDataBase(name: event, date: dates, description: description)
+        if !result {
+           view.showAlert()
+        } else {
+           router.closeModule()
+        }
     }
     
     func tapForPicker(currentDay: Date) -> String {

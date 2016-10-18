@@ -9,6 +9,6 @@
 import Foundation
 
 protocol AddInteractorInput {
-    func addToDataBase(name: String, date: Date)
+    func addToDataBase(name: String, date: Date, description: String) -> Bool
     
 }

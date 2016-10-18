@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class AddViewController: UIViewController, AddViewInput {
+class AddViewController: UIViewController, AddViewInput, TransitionHandler {
     
     
     @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
@@ -18,6 +18,7 @@ class AddViewController: UIViewController, AddViewInput {
     @IBOutlet weak var dateLabel: UITextField!
     @IBOutlet weak var eventLabel: UITextField!
     
+    @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var buttonSave: UIBarButtonItem!
 //    @IBAction func saveClick(_ sender: AnyObject) {
 //        getData()
@@ -48,8 +49,15 @@ class AddViewController: UIViewController, AddViewInput {
             }).addDisposableTo(disposeBag)
         
         buttonSave.rx.tap.asDriver().drive(onNext: {
-             self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!)
+            self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!, description: self.descriptionView.text)
         }).addDisposableTo(disposeBag)
     }
     
+    func showAlert () {
+        let alertController = UIAlertController(title: "iOScreator", message:
+            "enter the name of the event!", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+
 }

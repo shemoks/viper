@@ -35,13 +35,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="7Te-R0-zbo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NfD-2R-bGt">
-                            <connections>
-                                <action selector="receiveAddEventTap:" destination="VbX-hB-K48" id="4BT-FV-lak"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NfD-2R-bGt"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="openModuleAdd" destination="NfD-2R-bGt" id="qyI-Hu-tVg"/>
                         <outlet property="tableView" destination="jOy-I8-uvB" id="Q9C-S6-IIi"/>
                         <segue destination="a47-vn-RRs" kind="show" identifier="openAdd" id="2Es-cs-lGR"/>
                     </connections>

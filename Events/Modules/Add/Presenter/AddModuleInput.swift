@@ -9,7 +9,7 @@ import Foundation
 
 protocol AddModuleInput: class {
     
-    func setData(event: String, dates: Date)
+    func setData(event: String, dates: Date, description: String)
     func tapForPicker(currentDay: Date) -> String
 
 }

@@ -14,6 +14,7 @@ import RxDataSources
 
 class ListViewController: UIViewController, ListViewInput, TransitionHandler {
     
+    @IBOutlet weak var openModuleAdd: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var presenter: ListModuleInput!
     let disposeBag = DisposeBag()
@@ -26,6 +27,10 @@ class ListViewController: UIViewController, ListViewInput, TransitionHandler {
         tableView.register(UINib(nibName: "TodayCell", bundle: nil), forCellReuseIdentifier: "TodayCell")
         presenter.handleViewDidLoad()
         
+        openModuleAdd.rx.tap.asDriver().drive(onNext: {
+            self.presenter.handleAddEventTap()
+        }).addDisposableTo(disposeBag)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,10 +38,7 @@ class ListViewController: UIViewController, ListViewInput, TransitionHandler {
         presenter.handleViewDidLoad()
         reloadData()
     }
-    @IBAction func receiveAddEventTap(_ sender: AnyObject) {
-        presenter.handleAddEventTap()
-    }
-    
+
     func reloadData() {
         tableView?.reloadData()
     }
@@ -85,18 +87,6 @@ extension ListViewController: UITableViewDataSource {
             cell?.configure(with: presenter.eventListWeek(for: indexPath))
             return cell!
         }
-    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//         let configurationHalder = segue.destination
-//        ConfigurationBlock{
-//            
-//        }configurationHalder.presenter
-//    
-//    }
-
-    func push(viewController: UIViewController) {
-       navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
