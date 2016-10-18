@@ -15,8 +15,8 @@ class ListPresenter: ListModuleInput,  ListInteractorOutput {
     var events = [Event]()
     var eventsWeek = [Event]()
     
-    func handleAddEventTap(getViewController: ListViewController){
-       router.openAddEventModule(viewController: getViewController)
+    func handleAddEventTap(){
+       router.openAddEventModule()
     }
    
     func numberOfEvents(inSection section: Int) -> Int {

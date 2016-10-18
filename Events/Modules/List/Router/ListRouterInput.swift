@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ListRouterInput {
-    func openAddEventModule(viewController: ListViewController)
+    func openAddEventModule()
 }

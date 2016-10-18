@@ -9,20 +9,23 @@
 import UIKit
 import RealmSwift
 import RxSwift
+import RxDataSources
 
 
-
-class ListViewController: UIViewController, ListViewInput {
+class ListViewController: UIViewController, ListViewInput, TransitionHandler {
     
     @IBOutlet weak var tableView: UITableView!
     var presenter: ListModuleInput!
+    let disposeBag = DisposeBag()
     
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         tableView.register(UINib(nibName: "TodayCell", bundle: nil), forCellReuseIdentifier: "TodayCell")
         presenter.handleViewDidLoad()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,13 +33,8 @@ class ListViewController: UIViewController, ListViewInput {
         presenter.handleViewDidLoad()
         reloadData()
     }
-    // MARK: ListViewInput
-    func setupInitialState() {
-        
-    }
-    
     @IBAction func receiveAddEventTap(_ sender: AnyObject) {
-        presenter.handleAddEventTap(getViewController: self)
+        presenter.handleAddEventTap()
     }
     
     func reloadData() {
@@ -48,7 +46,7 @@ class ListViewController: UIViewController, ListViewInput {
 // MARK: - UITableViewDataSource
 
 extension ListViewController: UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
@@ -57,14 +55,14 @@ extension ListViewController: UITableViewDataSource {
             return "next week"
         }
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
-        
+
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+
         switch section {
         case 0:
             return presenter.numberOfEvents(inSection: section)
@@ -74,9 +72,9 @@ extension ListViewController: UITableViewDataSource {
             return 0
         }
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodayCell") as? TodayViewCell
@@ -89,5 +87,16 @@ extension ListViewController: UITableViewDataSource {
         }
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//         let configurationHalder = segue.destination
+//        ConfigurationBlock{
+//            
+//        }configurationHalder.presenter
+//    
+//    }
+
+    func push(viewController: UIViewController) {
+       navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 

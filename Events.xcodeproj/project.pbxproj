@@ -46,6 +46,8 @@
 		9A66FA251DAD3BAA00D88583 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66FA241DAD3BAA00D88583 /* DateHelper.swift */; };
 		9A66FA281DAD3C1C00D88583 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA261DAD3C1C00D88583 /* Add.storyboard */; };
 		9A66FA291DAD3C1C00D88583 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA271DAD3C1C00D88583 /* List.storyboard */; };
+		9A6FBDF61DB61DC300D87D21 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FBDF51DB61DC300D87D21 /* TransitionHandler.swift */; };
+		9A6FBDF81DB630A500D87D21 /* SegueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FBDF71DB630A500D87D21 /* SegueInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		9A66FA241DAD3BAA00D88583 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		9A66FA261DAD3C1C00D88583 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		9A66FA271DAD3C1C00D88583 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		9A6FBDF51DB61DC300D87D21 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		9A6FBDF71DB630A500D87D21 /* SegueInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueInfo.swift; sourceTree = "<group>"; };
 		DD6B34DC86F960624D6F57AF /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +213,8 @@
 				9A66F9B81DAD346A00D88583 /* Models */,
 				9A66F9B91DAD346A00D88583 /* Modules */,
 				9A66F9DF1DAD346A00D88583 /* Storyboards */,
+				9A6FBDF51DB61DC300D87D21 /* TransitionHandler.swift */,
+				9A6FBDF71DB630A500D87D21 /* SegueInfo.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -572,12 +578,14 @@
 				9A66F9E61DAD346A00D88583 /* AddConfigurator.swift in Sources */,
 				9A66F9EB1DAD346A00D88583 /* AddModuleInput.swift in Sources */,
 				9A66F9ED1DAD346A00D88583 /* AddRouter.swift in Sources */,
+				9A6FBDF61DB61DC300D87D21 /* TransitionHandler.swift in Sources */,
 				9A66F9F11DAD346A00D88583 /* AddViewOutput.swift in Sources */,
 				9A66FA151DAD3A0B00D88583 /* ListInitializer.swift in Sources */,
 				9A66FA251DAD3BAA00D88583 /* DateHelper.swift in Sources */,
 				9A66F9EC1DAD346A00D88583 /* AddPresenter.swift in Sources */,
 				9A66FA221DAD3B3A00D88583 /* ListRouter.swift in Sources */,
 				9A66F9E71DAD346A00D88583 /* AddInitializer.swift in Sources */,
+				9A6FBDF81DB630A500D87D21 /* SegueInfo.swift in Sources */,
 				9A66FA111DAD39AD00D88583 /* ListViewOutput.swift in Sources */,
 				9A66FA081DAD365000D88583 /* TodayViewCell.swift in Sources */,
 				9A66F9E91DAD346A00D88583 /* AddInteractorInput.swift in Sources */,

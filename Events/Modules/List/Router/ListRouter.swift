@@ -7,11 +7,19 @@
 //
 import UIKit
 
-class ListRouter: ListRouterInput {
+final class ListRouter: ListRouterInput {
+  
+  var transitionHandler: TransitionHandler!
     
-    func openAddEventModule(viewController: ListViewController) {
-       let addViewController = UIStoryboard.init(name: "Add", bundle: nil).instantiateViewController(withIdentifier: "AddController") as? AddViewController
-        viewController.navigationController?.pushViewController(addViewController!, animated: true)
+  
+    func openAddEventModule() {
+       
+        let addViewController = UIStoryboard.init(name: "Add", bundle: nil).instantiateViewController(withIdentifier: "AddController") as? AddViewController
+        transitionHandler.push(viewController: addViewController!)
+        
+//        viewController.navigationController?.pushViewController(addViewController!, animated: true)
     }
     
 }
+
+

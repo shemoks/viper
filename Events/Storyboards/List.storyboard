@@ -43,6 +43,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="jOy-I8-uvB" id="Q9C-S6-IIi"/>
+                        <segue destination="a47-vn-RRs" kind="show" identifier="openAdd" id="2Es-cs-lGR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Mz-K9-NzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -52,7 +53,15 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="804" y="-225.33733133433284"/>
+            <point key="canvasLocation" x="855" y="-215"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="8v5-Xd-v9b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Add" id="a47-vn-RRs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulM-ml-fG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479" y="-407"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vRW-7y-5rq">

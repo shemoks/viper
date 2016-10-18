@@ -10,7 +10,7 @@ import Foundation
 
 protocol ListModuleInput: class {
     // MARK: Actions
-    func handleAddEventTap(getViewController: ListViewController)
+    func handleAddEventTap()
     
     // MARK: View life cycle
     func handleViewDidLoad()
