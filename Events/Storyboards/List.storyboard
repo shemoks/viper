@@ -41,6 +41,7 @@
                         <outlet property="openModuleAdd" destination="NfD-2R-bGt" id="qyI-Hu-tVg"/>
                         <outlet property="tableView" destination="jOy-I8-uvB" id="Q9C-S6-IIi"/>
                         <segue destination="a47-vn-RRs" kind="show" identifier="openAdd" id="2Es-cs-lGR"/>
+                        <segue destination="yax-GK-Zjb" kind="show" id="pR3-qO-dVz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Mz-K9-NzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,12 +61,53 @@
             </objects>
             <point key="canvasLocation" x="1479" y="-407"/>
         </scene>
+        <!--Event View Controller-->
+        <scene sceneID="3Eo-t2-tL1">
+            <objects>
+                <viewController storyboardIdentifier="showDescription" id="yax-GK-Zjb" customClass="EventViewController" customModule="Events" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2u-p7-vva"/>
+                        <viewControllerLayoutGuide type="bottom" id="ovg-hT-l4Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IAy-Mw-STp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ys3-2T-PPL" customClass="MapView" customModule="Events" customModuleProvider="target">
+                                <frame key="frameInset" minY="315" width="375" height="352"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VO-Y0-woH">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ys3-2T-PPL" secondAttribute="trailing" id="DA3-FZ-R1m"/>
+                            <constraint firstItem="3VO-Y0-woH" firstAttribute="leading" secondItem="IAy-Mw-STp" secondAttribute="leading" id="Ixv-Df-eFH"/>
+                            <constraint firstItem="ovg-hT-l4Q" firstAttribute="top" secondItem="3VO-Y0-woH" secondAttribute="bottom" id="aMa-tl-4Ij"/>
+                            <constraint firstAttribute="trailing" secondItem="3VO-Y0-woH" secondAttribute="trailing" id="cdb-yD-1po"/>
+                            <constraint firstItem="ys3-2T-PPL" firstAttribute="leading" secondItem="IAy-Mw-STp" secondAttribute="leading" id="k9G-g6-5s0"/>
+                            <constraint firstItem="ovg-hT-l4Q" firstAttribute="top" secondItem="ys3-2T-PPL" secondAttribute="bottom" id="lRy-pD-5RW"/>
+                            <constraint firstItem="3VO-Y0-woH" firstAttribute="top" secondItem="h2u-p7-vva" secondAttribute="bottom" id="z9j-WH-XL6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwv-ip-N3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="KES-1I-Q37" customClass="EventModuleInitializer" customModule="Events" customModuleProvider="target">
+                    <connections>
+                        <outlet property="eventViewController" destination="yax-GK-Zjb" id="Q9H-IO-enJ"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1887.2" y="-215.44227886056973"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="vRW-7y-5rq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZGS-16-Id2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cK3-UK-1CY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cK3-UK-1CY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -77,6 +119,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHD-tz-k4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-135.19999999999999" y="-225.33733133433284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WfE-Fo-StR">
+            <objects>
+                <viewController id="xyY-zv-BXI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4TC-Vb-nsI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nnf-Td-w1L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaE-DK-qhH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5b-KR-nCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

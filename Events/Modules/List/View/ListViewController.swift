@@ -13,13 +13,13 @@ import RxDataSources
 
 
 class ListViewController: UIViewController, ListViewInput, TransitionHandler {
-    
+
     @IBOutlet weak var openModuleAdd: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var presenter: ListModuleInput!
     let disposeBag = DisposeBag()
-    
     // MARK: Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +38,7 @@ class ListViewController: UIViewController, ListViewInput, TransitionHandler {
         presenter.handleViewDidLoad()
         reloadData()
     }
-
+    
     func reloadData() {
         tableView?.reloadData()
     }
@@ -48,7 +48,7 @@ class ListViewController: UIViewController, ListViewInput, TransitionHandler {
 // MARK: - UITableViewDataSource
 
 extension ListViewController: UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
@@ -57,14 +57,14 @@ extension ListViewController: UITableViewDataSource {
             return "next week"
         }
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-
+        
         return 2
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         switch section {
         case 0:
             return presenter.numberOfEvents(inSection: section)
@@ -74,9 +74,12 @@ extension ListViewController: UITableViewDataSource {
             return 0
         }
     }
-
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodayCell") as? TodayViewCell
@@ -88,5 +91,22 @@ extension ListViewController: UITableViewDataSource {
             return cell!
         }
     }
+}
+
+extension ListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            // delete item at indexPath
+        }
+        
+        let share = UITableViewRowAction(style: .normal, title: "More") { (action, indexPath) in
+          self.presenter.showDetail(for: indexPath)
+            // share item at indexPath
+        }
+        
+        share.backgroundColor = UIColor.blue
+        
+        return [delete, share]}
 }
 

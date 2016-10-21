@@ -10,16 +10,16 @@ import Foundation
 import UIKit
 
 protocol TransitionHandler: class {
-   
+  
     func push(viewController: UIViewController)
     func dismiss()
-    
+    func dismissWithData(data: Coordinates)
 }
 
 extension TransitionHandler where Self: UIViewController {
+    
 
     func push(viewController: UIViewController) {
-    
         if let nav = navigationController {
             nav.pushViewController(viewController, animated: true)
         } else {
@@ -33,5 +33,16 @@ extension TransitionHandler where Self: UIViewController {
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    func dismissWithData(data: Coordinates){
+        
+        if let nav = navigationController {
+            nav.popViewController(animated: true)
+        } else if let _ = presentingViewController {
+        
+            dismiss(animated: true, completion: nil)
+        }
+    }
+
 }
 

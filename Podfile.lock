@@ -1,4 +1,11 @@
 PODS:
+  - GoogleMaps (2.1.0):
+    - GoogleMaps/Maps (= 2.1.0)
+  - GoogleMaps/Base (2.1.0)
+  - GoogleMaps/Maps (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - GooglePlaces (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
   - Realm (2.0.2):
     - Realm/Headers (= 2.0.2)
   - Realm/Headers (2.0.2)
@@ -12,18 +19,22 @@ PODS:
   - RxSwift (3.0.0-rc.1)
 
 DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
   - RealmSwift
   - RxCocoa (= 3.0.0-rc.1)
   - RxDataSources (~> 1.0.0-rc.1)
   - RxSwift (= 3.0.0-rc.1)
 
 SPEC CHECKSUMS:
+  GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
+  GooglePlaces: 16e96266483b8010e9f275399403647978523c86
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
   RxCocoa: e72a074a7f38896ec0382d096df5f58df10115c7
   RxDataSources: 178f66fbd31fba8d0b14cec1c90c3a0343c34432
   RxSwift: d7a3819dd71789c473e3cbf1a0c02d58b2692739
 
-PODFILE CHECKSUM: 3e92bb5249517b85afc1022e582cc422d6408fda
+PODFILE CHECKSUM: 278daba14ada5db98ff9f75532ec210c42bc1291
 
 COCOAPODS: 1.1.0.rc.3

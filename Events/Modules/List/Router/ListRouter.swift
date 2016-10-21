@@ -19,6 +19,12 @@ final class ListRouter: ListRouterInput {
         
 //        viewController.navigationController?.pushViewController(addViewController!, animated: true)
     }
+    func showDescription(event: Event){
+        let eventViewController = UIStoryboard.init(name: "List", bundle: nil).instantiateViewController(withIdentifier: "showDescription") as? EventViewController
+        let information = Events(information: event.descriptions, lat: event.lat, long: event.long)
+        eventViewController?.information = information
+        transitionHandler.push(viewController: eventViewController!)
+    }
     
 }
 

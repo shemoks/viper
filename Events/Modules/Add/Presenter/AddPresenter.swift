@@ -13,8 +13,8 @@ class AddPresenter: AddModuleInput, AddViewOutput, AddInteractorOutput {
     var interactor: AddInteractorInput!
     var router: AddRouterInput!
 
-    func setData(event: String, dates: Date, description: String) {
-        let result = interactor.addToDataBase(name: event, date: dates, description: description)
+    func setData(event: String, dates: Date, description: String, lat: Double, long: Double) {
+        let result = interactor.addToDataBase(name: event, date: dates, description: description, lat: lat, long: long)
         if !result {
            view.showAlert()
         } else {
@@ -24,5 +24,9 @@ class AddPresenter: AddModuleInput, AddViewOutput, AddInteractorOutput {
     
     func tapForPicker(currentDay: Date) -> String {
        return DateHelper.getStringFromDate(date: currentDay)
+    }
+    
+    func handleMapEventTap(){
+        router.openMap()
     }
 }

@@ -20,6 +20,8 @@ class Event: Object {
     dynamic var name = ""
     dynamic var dueDate: Date = Date()
     dynamic var descriptions = ""
+    dynamic var lat: Double = 0.0
+    dynamic var long: Double = 0.0
    
     func validate () -> Bool {
         if name != "" {

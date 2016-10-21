@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012605320760D269E3211E49 /* MapModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E1AD71C1AB34B4AB4F17B /* MapModuleInput.swift */; };
+		08F063B4018AE61009218AD9 /* EventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61498AFD552340822B68AB /* EventInteractor.swift */; };
 		098358C231AC93461AF2B695 /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB5C496F8CF7B32AAC037B4 /* Pods_Events.framework */; };
+		185786A72810D3E1E1E2D86E /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B477DF153568AB2FEF0CDC /* EventViewController.swift */; };
+		2319F8DAED9F722804356C88 /* EventInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27039C55A6B8D33D2A751B /* EventInteractorOutput.swift */; };
+		3DBFDAC32E42405A8A2FB648 /* MapRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21989B617F44337F6ED9BA34 /* MapRouterInput.swift */; };
+		52782D7F30BFE757970669E7 /* EventModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54D16AD39C50D562545DF /* EventModuleInput.swift */; };
+		67AF8EF7B89EB2446EF115D3 /* MapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F599B396B7E2F7AA20C2EC /* MapConfigurator.swift */; };
+		73A63DCA05E8D114C590FE7B /* MapViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D6785EC7C2DC5223A5A23 /* MapViewOutput.swift */; };
+		7EB0FCA14113E8DE1D6988FA /* EventInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73337DEAFC35B406EC50CCF /* EventInteractorInput.swift */; };
+		807A79C4891783E05E03C256 /* EventViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF0D13BD2E69BBDE7A536D /* EventViewOutput.swift */; };
+		88EC0ABDF893D55D8AEE2703 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9724E416822F68C98B8F0 /* MapInteractor.swift */; };
+		9000A5C5EDC7B8BC88963610 /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738A2EEC32C6B0C074C2469 /* EventPresenter.swift */; };
+		903DF14F9F63D7B205460FC1 /* EventRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577F8FFBC76FBAAC58AAE78 /* EventRouterInput.swift */; };
 		9A66F9701DAD27BC00D88583 /* EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F96F1DAD27BC00D88583 /* EventsTests.swift */; };
 		9A66F97B1DAD27BC00D88583 /* EventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F97A1DAD27BC00D88583 /* EventsUITests.swift */; };
 		9A66F9E11DAD346A00D88583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66F9B11DAD346A00D88583 /* AppDelegate.swift */; };
@@ -47,6 +60,20 @@
 		9A66FA281DAD3C1C00D88583 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA261DAD3C1C00D88583 /* Add.storyboard */; };
 		9A66FA291DAD3C1C00D88583 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66FA271DAD3C1C00D88583 /* List.storyboard */; };
 		9A6FBDF61DB61DC300D87D21 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FBDF51DB61DC300D87D21 /* TransitionHandler.swift */; };
+		9A82DAF11DB7B80C005BAC65 /* Map.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A82DAF01DB7B80C005BAC65 /* Map.xib */; };
+		9A82DAF31DB7B895005BAC65 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82DAF21DB7B895005BAC65 /* MapView.swift */; };
+		9A82DAF91DB8D066005BAC65 /* MapRouterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82DAF81DB8D066005BAC65 /* MapRouterOutput.swift */; };
+		BE52E101A23E0C09D5DCCFE4 /* EventInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5204664CC0F8D69C73E5FE0 /* EventInitializer.swift */; };
+		BEA76717FE08E12F3B421D42 /* MapViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12857B9F3E2B259A7C4201F /* MapViewInput.swift */; };
+		BEEA9666A439B0B1102BA5C4 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC7E41B08182754A4A810B /* MapPresenter.swift */; };
+		C480DE844EBF2F49EFBF22D2 /* EventViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508E465B48B03BC3F19076F /* EventViewInput.swift */; };
+		C8958533E7CBB9D05F64E9B1 /* EventConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA3AE42E9120CE13D8F3D1 /* EventConfigurator.swift */; };
+		D4004087C5CFECFC908B1F5A /* MapInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42202CA43E3D578E6F6DE79 /* MapInitializer.swift */; };
+		D52CC8D2F240069BB598CD8B /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D94A0700CF3E8041DF6D00 /* MapRouter.swift */; };
+		D64C9A2869A1BCD64E3F2513 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573ECD8CBFD47D38A92ED805 /* MapViewController.swift */; };
+		F0930781ECE74D90FBFDD9CC /* EventRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517D8FF0BB8840889F56C08 /* EventRouter.swift */; };
+		F2213F7FE4C3152355C884B8 /* MapInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1CA219EDD96A0DA0A790D /* MapInteractorInput.swift */; };
+		FCF6A7A71B6D9852808E2F13 /* MapInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB81C63C7725163E0AFDA77 /* MapInteractorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +95,19 @@
 
 /* Begin PBXFileReference section */
 		01BABEE2F40561BFDD1FE841 /* Pods-Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.release.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.release.xcconfig"; sourceTree = "<group>"; };
+		0517D8FF0BB8840889F56C08 /* EventRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventRouter.swift; sourceTree = "<group>"; };
+		06D94A0700CF3E8041DF6D00 /* MapRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		12F599B396B7E2F7AA20C2EC /* MapConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapConfigurator.swift; sourceTree = "<group>"; };
+		21989B617F44337F6ED9BA34 /* MapRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapRouterInput.swift; sourceTree = "<group>"; };
+		24BA3AE42E9120CE13D8F3D1 /* EventConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventConfigurator.swift; sourceTree = "<group>"; };
+		285D6785EC7C2DC5223A5A23 /* MapViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewOutput.swift; sourceTree = "<group>"; };
+		2E61498AFD552340822B68AB /* EventInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventInteractor.swift; sourceTree = "<group>"; };
+		31B477DF153568AB2FEF0CDC /* EventViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		43EF0D13BD2E69BBDE7A536D /* EventViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventViewOutput.swift; sourceTree = "<group>"; };
+		5508E465B48B03BC3F19076F /* EventViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventViewInput.swift; sourceTree = "<group>"; };
+		573ECD8CBFD47D38A92ED805 /* MapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6EB5C496F8CF7B32AAC037B4 /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C27039C55A6B8D33D2A751B /* EventInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventInteractorOutput.swift; sourceTree = "<group>"; };
 		9A66F9571DAD27BC00D88583 /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A66F96B1DAD27BC00D88583 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A66F96F1DAD27BC00D88583 /* EventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTests.swift; sourceTree = "<group>"; };
@@ -114,7 +153,22 @@
 		9A66FA261DAD3C1C00D88583 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		9A66FA271DAD3C1C00D88583 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		9A6FBDF51DB61DC300D87D21 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		9A82DAF01DB7B80C005BAC65 /* Map.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Map.xib; sourceTree = "<group>"; };
+		9A82DAF21DB7B895005BAC65 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9A82DAF81DB8D066005BAC65 /* MapRouterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRouterOutput.swift; sourceTree = "<group>"; };
+		A738A2EEC32C6B0C074C2469 /* EventPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
+		A8C54D16AD39C50D562545DF /* EventModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventModuleInput.swift; sourceTree = "<group>"; };
+		B2BC7E41B08182754A4A810B /* MapPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		B5204664CC0F8D69C73E5FE0 /* EventInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventInitializer.swift; sourceTree = "<group>"; };
+		B73337DEAFC35B406EC50CCF /* EventInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventInteractorInput.swift; sourceTree = "<group>"; };
+		BBB81C63C7725163E0AFDA77 /* MapInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorOutput.swift; sourceTree = "<group>"; };
+		C42202CA43E3D578E6F6DE79 /* MapInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInitializer.swift; sourceTree = "<group>"; };
+		D577F8FFBC76FBAAC58AAE78 /* EventRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventRouterInput.swift; sourceTree = "<group>"; };
 		DD6B34DC86F960624D6F57AF /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
+		E49E1AD71C1AB34B4AB4F17B /* MapModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapModuleInput.swift; sourceTree = "<group>"; };
+		F12857B9F3E2B259A7C4201F /* MapViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewInput.swift; sourceTree = "<group>"; };
+		F3C1CA219EDD96A0DA0A790D /* MapInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorInput.swift; sourceTree = "<group>"; };
+		FAD9724E416822F68C98B8F0 /* MapInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +205,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		28740DE951849F02CB78BF55 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B73337DEAFC35B406EC50CCF /* EventInteractorInput.swift */,
+				7C27039C55A6B8D33D2A751B /* EventInteractorOutput.swift */,
+				2E61498AFD552340822B68AB /* EventInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46F716F70F38FDF41400578D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EAD62C381E9C0BCCB5CC73C0 /* View */,
+				D5572F5B6C00840DC9CBAED5 /* Presenter */,
+				F11F59E6C70DF020BBFF21B3 /* Interactor */,
+				FE1CA0C90153D8EE902E9A40 /* Router */,
+				7A16911BC0982796BEB5971F /* Configurator */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		49B45AA7DD867C6621E00CC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5508E465B48B03BC3F19076F /* EventViewInput.swift */,
+				43EF0D13BD2E69BBDE7A536D /* EventViewOutput.swift */,
+				31B477DF153568AB2FEF0CDC /* EventViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64590E803CFBA7152A63ED4C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54D16AD39C50D562545DF /* EventModuleInput.swift */,
+				A738A2EEC32C6B0C074C2469 /* EventPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6F25204F75B69FB6490742FE /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				49B45AA7DD867C6621E00CC7 /* View */,
+				64590E803CFBA7152A63ED4C /* Presenter */,
+				28740DE951849F02CB78BF55 /* Interactor */,
+				97DDEC9EF4B842678DECA7E9 /* Router */,
+				BB763E6CA3DDC216CDFC484B /* Configurator */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		7A16911BC0982796BEB5971F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				12F599B396B7E2F7AA20C2EC /* MapConfigurator.swift */,
+				C42202CA43E3D578E6F6DE79 /* MapInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		81BA7A34AA2E6E617AAD4013 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +274,15 @@
 				01BABEE2F40561BFDD1FE841 /* Pods-Events.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		97DDEC9EF4B842678DECA7E9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D577F8FFBC76FBAAC58AAE78 /* EventRouterInput.swift */,
+				0517D8FF0BB8840889F56C08 /* EventRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		9A66F94E1DAD27BC00D88583 = {
@@ -230,6 +355,8 @@
 			children = (
 				9A66F9BA1DAD346A00D88583 /* Add */,
 				9A66F9CC1DAD346A00D88583 /* List */,
+				46F716F70F38FDF41400578D /* Map */,
+				6F25204F75B69FB6490742FE /* Event */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -286,6 +413,7 @@
 		9A66F9C81DAD346A00D88583 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9A82DAEF1DB7B7F1005BAC65 /* Map */,
 				9A66F9C91DAD346A00D88583 /* AddViewController.swift */,
 				9A66F9CA1DAD346A00D88583 /* AddViewInput.swift */,
 				9A66F9CB1DAD346A00D88583 /* AddViewOutput.swift */,
@@ -371,6 +499,63 @@
 				9A66FA271DAD3C1C00D88583 /* List.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9A82DAEF1DB7B7F1005BAC65 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9A82DAF01DB7B80C005BAC65 /* Map.xib */,
+				9A82DAF21DB7B895005BAC65 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		BB763E6CA3DDC216CDFC484B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				24BA3AE42E9120CE13D8F3D1 /* EventConfigurator.swift */,
+				B5204664CC0F8D69C73E5FE0 /* EventInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D5572F5B6C00840DC9CBAED5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E49E1AD71C1AB34B4AB4F17B /* MapModuleInput.swift */,
+				B2BC7E41B08182754A4A810B /* MapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EAD62C381E9C0BCCB5CC73C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F12857B9F3E2B259A7C4201F /* MapViewInput.swift */,
+				285D6785EC7C2DC5223A5A23 /* MapViewOutput.swift */,
+				573ECD8CBFD47D38A92ED805 /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F11F59E6C70DF020BBFF21B3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3C1CA219EDD96A0DA0A790D /* MapInteractorInput.swift */,
+				BBB81C63C7725163E0AFDA77 /* MapInteractorOutput.swift */,
+				FAD9724E416822F68C98B8F0 /* MapInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FE1CA0C90153D8EE902E9A40 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				21989B617F44337F6ED9BA34 /* MapRouterInput.swift */,
+				06D94A0700CF3E8041DF6D00 /* MapRouter.swift */,
+				9A82DAF81DB8D066005BAC65 /* MapRouterOutput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +674,7 @@
 				9A66F9E31DAD346A00D88583 /* LaunchScreen.storyboard in Resources */,
 				9A66FA071DAD365000D88583 /* TodayCell.xib in Resources */,
 				9A66FA281DAD3C1C00D88583 /* Add.storyboard in Resources */,
+				9A82DAF11DB7B80C005BAC65 /* Map.xib in Resources */,
 				9A66F9E41DAD346A00D88583 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A66FA191DAD3A5100D88583 /* ListInteractor.swift in Sources */,
+				9A82DAF31DB7B895005BAC65 /* MapView.swift in Sources */,
 				9A66F9EE1DAD346A00D88583 /* AddRouterInput.swift in Sources */,
 				9A66FA101DAD39AD00D88583 /* ListViewInput.swift in Sources */,
 				9A66FA1F1DAD3A8F00D88583 /* ListPresenter.swift in Sources */,
@@ -587,11 +774,36 @@
 				9A66F9E91DAD346A00D88583 /* AddInteractorInput.swift in Sources */,
 				9A66FA1A1DAD3A5100D88583 /* ListInteractorInput.swift in Sources */,
 				9A66FA141DAD3A0B00D88583 /* ListConfigurator.swift in Sources */,
+				9A82DAF91DB8D066005BAC65 /* MapRouterOutput.swift in Sources */,
 				9A66F9E11DAD346A00D88583 /* AppDelegate.swift in Sources */,
 				9A66F9EA1DAD346A00D88583 /* AddInteractorOutput.swift in Sources */,
 				9A66FA1B1DAD3A5100D88583 /* ListInteractorOutput.swift in Sources */,
 				9A66FA231DAD3B3A00D88583 /* ListRouterInput.swift in Sources */,
 				9A66F9EF1DAD346A00D88583 /* AddViewController.swift in Sources */,
+				BEA76717FE08E12F3B421D42 /* MapViewInput.swift in Sources */,
+				73A63DCA05E8D114C590FE7B /* MapViewOutput.swift in Sources */,
+				D64C9A2869A1BCD64E3F2513 /* MapViewController.swift in Sources */,
+				012605320760D269E3211E49 /* MapModuleInput.swift in Sources */,
+				BEEA9666A439B0B1102BA5C4 /* MapPresenter.swift in Sources */,
+				F2213F7FE4C3152355C884B8 /* MapInteractorInput.swift in Sources */,
+				FCF6A7A71B6D9852808E2F13 /* MapInteractorOutput.swift in Sources */,
+				88EC0ABDF893D55D8AEE2703 /* MapInteractor.swift in Sources */,
+				3DBFDAC32E42405A8A2FB648 /* MapRouterInput.swift in Sources */,
+				D52CC8D2F240069BB598CD8B /* MapRouter.swift in Sources */,
+				67AF8EF7B89EB2446EF115D3 /* MapConfigurator.swift in Sources */,
+				D4004087C5CFECFC908B1F5A /* MapInitializer.swift in Sources */,
+				C480DE844EBF2F49EFBF22D2 /* EventViewInput.swift in Sources */,
+				807A79C4891783E05E03C256 /* EventViewOutput.swift in Sources */,
+				185786A72810D3E1E1E2D86E /* EventViewController.swift in Sources */,
+				52782D7F30BFE757970669E7 /* EventModuleInput.swift in Sources */,
+				9000A5C5EDC7B8BC88963610 /* EventPresenter.swift in Sources */,
+				7EB0FCA14113E8DE1D6988FA /* EventInteractorInput.swift in Sources */,
+				2319F8DAED9F722804356C88 /* EventInteractorOutput.swift in Sources */,
+				08F063B4018AE61009218AD9 /* EventInteractor.swift in Sources */,
+				903DF14F9F63D7B205460FC1 /* EventRouterInput.swift in Sources */,
+				F0930781ECE74D90FBFDD9CC /* EventRouter.swift in Sources */,
+				C8958533E7CBB9D05F64E9B1 /* EventConfigurator.swift in Sources */,
+				BE52E101A23E0C09D5DCCFE4 /* EventInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,11 @@ class AddRouter: AddRouterInput {
     var transitionHandler: TransitionHandler!
     
     func closeModule(){
-        
         transitionHandler.dismiss()
+    }
+    
+    func openMap(){
+//        let addViewController = UIStoryboard.init(name: "Add", bundle: nil).instantiateViewController(withIdentifier: "Map") as? MapViewController
+//        //transitionHandler.push(viewController: addViewController!)
     }
 }

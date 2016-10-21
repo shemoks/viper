@@ -10,4 +10,5 @@ import Foundation
 
 protocol ListRouterInput {
     func openAddEventModule()
+    func showDescription(event: Event)
 }

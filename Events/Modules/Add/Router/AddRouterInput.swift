@@ -11,5 +11,6 @@ import Foundation
 protocol AddRouterInput {
     
     func closeModule()
+    func openMap()
 
 }

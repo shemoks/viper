@@ -6,6 +6,8 @@ pod 'RealmSwift'
 pod 'RxSwift','3.0.0-rc.1'
 pod 'RxCocoa','3.0.0-rc.1'
 pod 'RxDataSources', '~> 1.0.0-rc.1'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 end
 
 post_install do |installer|

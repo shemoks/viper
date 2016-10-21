@@ -19,6 +19,8 @@ protocol ListModuleInput: class {
     func numberOfEvents(inSection section: Int) -> Int
     func eventList(for indexPath: IndexPath) -> Event
     func eventListWeek(for indexPath: IndexPath) -> Event
+    func deleteEvent(for indexPath: IndexPath)
+    func showDetail(for indexPath: IndexPath)
 }
 
 protocol ListInteractorOutput: class {

@@ -9,22 +9,28 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import GoogleMaps
 
-class AddViewController: UIViewController, AddViewInput, TransitionHandler {
+class AddViewController: UIViewController, AddViewInput, TransitionHandler, MapRouterOutput {
     
-    
-    @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
     @IBOutlet weak var picker: UIDatePicker!
     @IBOutlet weak var dateLabel: UITextField!
     @IBOutlet weak var eventLabel: UITextField!
-    
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var buttonSave: UIBarButtonItem!
-//    @IBAction func saveClick(_ sender: AnyObject) {
-//        getData()
-//    }
+    var currentCoord = Coordinates(lat: 0.0, long: 0.0)
+    @IBOutlet weak var long: UITextField!
+    @IBOutlet weak var lantitude: UITextField!
+    
+    @IBOutlet weak var mapOpenButton: UIButton!
     var presenter: AddModuleInput!
     var disposeBag = DisposeBag()
+    
+    func getCoord(data: Coordinates) {
+        self.currentCoord = data
+        lantitude.text = String(currentCoord.lat)
+        long.text = String(currentCoord.long)
+    }
     
     lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -37,9 +43,6 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tapGestureRecognizer.rx.event.asDriver().drive(onNext: { [unowned self] _ in self.view.endEditing(true)
-            }).addDisposableTo(disposeBag)
-        
         picker.rx.date.asDriver()
             .map {
                 self.dateFormatter.string(from: $0)
@@ -49,8 +52,13 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler {
             }).addDisposableTo(disposeBag)
         
         buttonSave.rx.tap.asDriver().drive(onNext: {
-            self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!, description: self.descriptionView.text)
+            self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!, description: self.descriptionView.text, lat: Double(self.lantitude.text!)!, long: Double(self.long.text!)! )
         }).addDisposableTo(disposeBag)
+        
+        mapOpenButton.rx.tap.asDriver().drive(onNext: {
+            self.presenter.handleMapEventTap()
+        }).addDisposableTo(disposeBag)
+        
     }
     
     func showAlert () {
@@ -59,5 +67,12 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler {
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Map" {
+            let controller: MapViewController = segue.destination as! MapViewController
+            controller.coord = self
+        }
+    }
+    
 }

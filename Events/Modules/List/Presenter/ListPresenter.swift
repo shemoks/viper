@@ -49,5 +49,14 @@ class ListPresenter: ListModuleInput,  ListInteractorOutput {
     func setEventsWeek(_events events: [Event]) {
         self.eventsWeek = events
     }
+    
+    func showDetail(for indexPath: IndexPath) {
+        let currentEvent = eventList(for: indexPath)
+        router.showDescription(event: currentEvent)
+    }
+    
+    func deleteEvent(for indexPath: IndexPath) {
+       
+    }
 }
 

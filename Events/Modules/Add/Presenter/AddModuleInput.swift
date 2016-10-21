@@ -9,7 +9,8 @@ import Foundation
 
 protocol AddModuleInput: class {
     
-    func setData(event: String, dates: Date, description: String)
+    func setData(event: String, dates: Date, description: String, lat: Double, long: Double)
     func tapForPicker(currentDay: Date) -> String
+    func handleMapEventTap()
 
 }
