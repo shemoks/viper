@@ -51,12 +51,26 @@ class ListPresenter: ListModuleInput,  ListInteractorOutput {
     }
     
     func showDetail(for indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+      
         let currentEvent = eventList(for: indexPath)
         router.showDescription(event: currentEvent)
+        default:
+        let currentEvent = eventListWeek(for: indexPath)
+        router.showDescription(event: currentEvent)
+    }
     }
     
     func deleteEvent(for indexPath: IndexPath) {
-       
+        switch indexPath.section {
+        case 0:
+            let currentEvent = eventList(for: indexPath)
+            interactor.deleteEventForIndex(event: currentEvent)
+        default:
+            let currentEvent = eventListWeek(for: indexPath)
+            interactor.deleteEventForIndex(event: currentEvent)
+        }
     }
 }
 

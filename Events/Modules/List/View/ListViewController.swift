@@ -96,17 +96,40 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        switch indexPath.section {
+        case 0:
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+           self.presenter.deleteEvent(for: indexPath)
+           self.reloadData()
             // delete item at indexPath
         }
-        
+
         let share = UITableViewRowAction(style: .normal, title: "More") { (action, indexPath) in
           self.presenter.showDetail(for: indexPath)
             // share item at indexPath
         }
-        
         share.backgroundColor = UIColor.blue
         
-        return [delete, share]}
+        return [delete, share]
+            
+        
+        default:
+            
+            let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+               self.presenter.deleteEvent(for: indexPath)
+               self.reloadData()
+            }
+            
+            let share = UITableViewRowAction(style: .normal, title: "More") { (action, indexPath) in
+                self.presenter.showDetail(for: indexPath)
+                // share item at indexPath
+            }
+                share.backgroundColor = UIColor.blue
+                
+                return [delete, share]
+        }
+       
+}
 }
 

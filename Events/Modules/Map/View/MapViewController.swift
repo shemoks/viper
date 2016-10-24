@@ -57,6 +57,5 @@ class MapViewController: UIViewController, MapViewInput, GMSMapViewDelegate,Tran
         result.lat = coordinate.latitude
         result.long = coordinate.longitude
         coord.getCoord(data: result)
-        //  print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
     }
 }

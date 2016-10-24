@@ -12,6 +12,7 @@ protocol ListInteractorInput: class {
     
 func getEvents()
 func getEventsToTheNextWeek()
+func deleteEventForIndex(event: Event)
 //func getOneEvent()
     
 }

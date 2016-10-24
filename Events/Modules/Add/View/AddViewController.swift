@@ -58,6 +58,9 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler, MapR
         mapOpenButton.rx.tap.asDriver().drive(onNext: {
             self.presenter.handleMapEventTap()
         }).addDisposableTo(disposeBag)
+       
+        lantitude.text = String(currentCoord.lat)
+        long.text = String(currentCoord.long)
         
     }
     

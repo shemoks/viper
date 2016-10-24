@@ -8,14 +8,14 @@
 import RealmSwift
 
 class ListInteractor: ListInteractorInput {
-
+    
     weak var presenter: ListInteractorOutput!
     var realm: Realm! = try! Realm()
     
     func getEvents() {
         let todayString = DateHelper.getStringFromDate(date: Date())
         let today = DateHelper.getDateFromString(date: todayString)
-       let events = realm.objects(Event.self).filter("dueDate = %@", today)
+        let events = realm.objects(Event.self).filter("dueDate = %@", today)
         //filter("dueDate == \(Date())")
         presenter.setEvents(_events: Array(events))
     }
@@ -25,5 +25,14 @@ class ListInteractor: ListInteractorInput {
         print("\(DateHelper.addValueToDate(number: 14))")
         let events = realm.objects(Event.self).filter("dueDate > %@ AND dueDate <= %@", DateHelper.addValueToDate(number: 7),(DateHelper.addValueToDate(number: 14))).sorted(byProperty: "dueDate")
         presenter.setEventsWeek(_events: Array(events))
+    }
+    
+    func deleteEventForIndex(event: Event){
+        
+        try! realm.write {
+            realm.delete(event)
+        }
+        getEvents()
+        getEventsToTheNextWeek()
     }
 }

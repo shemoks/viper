@@ -52,12 +52,12 @@
                                     <constraint firstItem="Bkh-cg-dAd" firstAttribute="top" secondItem="nYH-GG-vJ7" secondAttribute="bottom" constant="8" id="NKa-Rx-JZX"/>
                                     <constraint firstItem="Bkh-cg-dAd" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" constant="16" id="VYD-vq-Pdu"/>
                                     <constraint firstItem="12j-wv-laK" firstAttribute="top" secondItem="Bkh-cg-dAd" secondAttribute="bottom" constant="8" id="eso-vW-mJ2"/>
-                                    <constraint firstAttribute="trailing" secondItem="12j-wv-laK" secondAttribute="trailing" id="iIM-BU-LsW"/>
-                                    <constraint firstAttribute="trailing" secondItem="nYH-GG-vJ7" secondAttribute="trailing" id="las-Km-pAA"/>
+                                    <constraint firstAttribute="trailing" secondItem="12j-wv-laK" secondAttribute="trailing" constant="10" id="iIM-BU-LsW"/>
+                                    <constraint firstAttribute="trailing" secondItem="nYH-GG-vJ7" secondAttribute="trailing" constant="10" id="las-Km-pAA"/>
                                     <constraint firstItem="jDY-7l-XgL" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" constant="16" id="nwt-4O-xT4"/>
-                                    <constraint firstItem="nYH-GG-vJ7" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" id="pnd-FB-F2M"/>
+                                    <constraint firstItem="nYH-GG-vJ7" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" constant="10" id="pnd-FB-F2M"/>
                                     <constraint firstItem="nYH-GG-vJ7" firstAttribute="top" secondItem="jDY-7l-XgL" secondAttribute="bottom" constant="8" id="wvz-aA-biO"/>
-                                    <constraint firstItem="12j-wv-laK" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" id="ylT-8t-ayf"/>
+                                    <constraint firstItem="12j-wv-laK" firstAttribute="leading" secondItem="VFr-dc-GlZ" secondAttribute="leading" constant="10" id="ylT-8t-ayf"/>
                                 </constraints>
                             </view>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XeC-f9-HSg">
@@ -92,7 +92,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYT-Yp-Wsk">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYT-Yp-Wsk">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3yf-Ei-kYI">
                                         <subviews>
@@ -146,10 +146,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XeC-f9-HSg" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" id="4Ju-Ep-NcO"/>
+                            <constraint firstItem="XeC-f9-HSg" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" constant="10" id="4Ju-Ep-NcO"/>
                             <constraint firstItem="GVx-Op-myQ" firstAttribute="leading" secondItem="3Sm-pu-wla" secondAttribute="trailing" constant="16" id="528-o4-Q2K"/>
                             <constraint firstItem="VFr-dc-GlZ" firstAttribute="leading" secondItem="8qb-Lb-ayG" secondAttribute="leading" id="68q-Ti-HEb"/>
-                            <constraint firstAttribute="trailing" secondItem="XeC-f9-HSg" secondAttribute="trailing" id="D92-Jh-B7l"/>
+                            <constraint firstAttribute="trailing" secondItem="XeC-f9-HSg" secondAttribute="trailing" constant="10" id="D92-Jh-B7l"/>
                             <constraint firstItem="Exi-Cg-cm8" firstAttribute="top" secondItem="XeC-f9-HSg" secondAttribute="bottom" constant="10" id="F9t-Zn-rT1"/>
                             <constraint firstItem="aYT-Yp-Wsk" firstAttribute="top" secondItem="GVx-Op-myQ" secondAttribute="bottom" constant="10" id="IcB-9u-8jW"/>
                             <constraint firstItem="3Sm-pu-wla" firstAttribute="top" secondItem="0AC-pz-Uxx" secondAttribute="bottom" constant="10" id="L7n-it-cXE"/>
