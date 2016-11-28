@@ -22,6 +22,7 @@ class Event: Object {
     dynamic var descriptions = ""
     dynamic var lat: Double = 0.0
     dynamic var long: Double = 0.0
+    dynamic var place: String = ""
    
     func validate () -> Bool {
         if name != "" {

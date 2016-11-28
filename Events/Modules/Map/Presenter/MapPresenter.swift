@@ -8,6 +8,7 @@
 struct Coordinates {
     var lat: Double
     var long: Double
+    var adress: String
 }
 
 class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
@@ -18,11 +19,13 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     weak var view: MapViewInput!
     var interactor: MapInteractorInput!
     var router: MapRouterInput!
-    var currentCoordinates = Coordinates(lat: 0.0, long: 0.0)
+    var currentCoordinates = Coordinates(lat: 0.0, long: 0.0, adress: "")
     
-    func setCoordinates(lat: Double, long: Double) {
+    func setCoordinates(lat: Double, long: Double, adress: String) {
         self.currentCoordinates.lat = lat
         self.currentCoordinates.long = long
+        self.currentCoordinates.adress = adress
+        
     }
     
     func getData() {

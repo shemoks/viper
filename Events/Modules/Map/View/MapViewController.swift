@@ -47,15 +47,36 @@ class MapViewController: UIViewController, MapViewInput, GMSMapViewDelegate,Tran
     
     // MARK: GMSMapViewDelegate
     
-    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        var result = Coordinates(lat: 0.0, long: 0.0)
+//    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+//        var result = Coordinates(lat: 0.0, long: 0.0, adress: "")
+//        mapView.clear()
+//        let marker = GMSMarker()
+//        marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+//        marker.map = mapView
+//        presenter.setCoordinates(lat: coordinate.latitude, long: coordinate.longitude, adress: "")
+//        result.lat = coordinate.latitude
+//        result.long = coordinate.longitude
+//        let geocoder = GMSGeocoder()
+//        geocoder.reverseGeocodeCoordinate(coordinate) { response, error in
+//            if let address = response?.firstResult() {
+//                let lines = address.lines! as [String]
+//                result.adress = lines.first!
+//            }
+//        }
+//              //  self.addressLabel.text = lines.joinWithSeparator("\n")
+//        coord.getCoord(data: result)
+//    }
+    
+    func mapView(_ mapView: GMSMapView, didTapPOIWithPlaceID placeID: String, name: String, location: CLLocationCoordinate2D) {
+        var result = Coordinates(lat: 0.0, long: 0.0, adress: "")
         mapView.clear()
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        marker.position = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
         marker.map = mapView
-        presenter.setCoordinates(lat: coordinate.latitude, long: coordinate.longitude)
-        result.lat = coordinate.latitude
-        result.long = coordinate.longitude
+        presenter.setCoordinates(lat: location.latitude, long: location.longitude, adress: name)
+        result.lat = location.latitude
+        result.long = location.longitude
+        result.adress = name
         coord.getCoord(data: result)
     }
 }

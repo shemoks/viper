@@ -13,8 +13,8 @@ class AddPresenter: AddModuleInput, AddViewOutput, AddInteractorOutput {
     var interactor: AddInteractorInput!
     var router: AddRouterInput!
 
-    func setData(event: String, dates: Date, description: String, lat: Double, long: Double) {
-        let result = interactor.addToDataBase(name: event, date: dates, description: description, lat: lat, long: long)
+    func setData(event: String, dates: Date, description: String, lat: Double, long: Double, place: String) {
+        let result = interactor.addToDataBase(name: event, date: dates, description: description, lat: lat, long: long, place: place)
         if !result {
            view.showAlert()
         } else {

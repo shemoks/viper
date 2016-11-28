@@ -13,7 +13,7 @@ class AddInteractor: AddInteractorInput {
     weak var presenter: AddInteractorOutput!
    
 
-    func addToDataBase(name: String, date: Date, description: String, lat: Double, long: Double) -> Bool {
+    func addToDataBase(name: String, date: Date, description: String, lat: Double, long: Double, place: String) -> Bool {
         let realm = try! Realm()
         let event = Event()
         event.dueDate = date
@@ -21,6 +21,7 @@ class AddInteractor: AddInteractorInput {
         event.descriptions = description
         event.lat = lat
         event.long = long
+        event.place = place
         if event.validate() {
             try! realm.write {
                 realm.add(event)

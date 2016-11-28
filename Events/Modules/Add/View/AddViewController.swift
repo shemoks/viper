@@ -13,12 +13,13 @@ import GoogleMaps
 
 class AddViewController: UIViewController, AddViewInput, TransitionHandler, MapRouterOutput {
     
+    @IBOutlet weak var placeLabel: UITextField!
     @IBOutlet weak var picker: UIDatePicker!
     @IBOutlet weak var dateLabel: UITextField!
     @IBOutlet weak var eventLabel: UITextField!
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var buttonSave: UIBarButtonItem!
-    var currentCoord = Coordinates(lat: 0.0, long: 0.0)
+    var currentCoord = Coordinates(lat: 0.0, long: 0.0, adress: "")
     @IBOutlet weak var long: UITextField!
     @IBOutlet weak var lantitude: UITextField!
     
@@ -30,6 +31,7 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler, MapR
         self.currentCoord = data
         lantitude.text = String(currentCoord.lat)
         long.text = String(currentCoord.long)
+        placeLabel.text = currentCoord.adress
     }
     
     lazy var dateFormatter: DateFormatter = {
@@ -52,15 +54,15 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler, MapR
             }).addDisposableTo(disposeBag)
         
         buttonSave.rx.tap.asDriver().drive(onNext: {
-            self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!, description: self.descriptionView.text, lat: Double(self.lantitude.text!)!, long: Double(self.long.text!)! )
+            self.presenter.setData(event: self.eventLabel.text!, dates: self.dateFormatter.date(from: self.dateLabel.text!)!, description: self.descriptionView.text, lat: Double(self.lantitude.text!)!, long: Double(self.long.text!)!, place: self.placeLabel.text! )
         }).addDisposableTo(disposeBag)
         
         mapOpenButton.rx.tap.asDriver().drive(onNext: {
             self.presenter.handleMapEventTap()
         }).addDisposableTo(disposeBag)
        
-        lantitude.text = String(currentCoord.lat)
-        long.text = String(currentCoord.long)
+       // lantitude.text = currentCoord.adress
+       // long.text = String(currentCoord.long)
         
     }
     
@@ -77,5 +79,4 @@ class AddViewController: UIViewController, AddViewInput, TransitionHandler, MapR
             controller.coord = self
         }
     }
-    
 }

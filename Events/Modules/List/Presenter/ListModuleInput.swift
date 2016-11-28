@@ -17,10 +17,15 @@ protocol ListModuleInput: class {
     
     // MARK: Table View
     func numberOfEvents(inSection section: Int) -> Int
+    func numberOfEventsFilter(inSection section: Int) -> Int
     func eventList(for indexPath: IndexPath) -> Event
     func eventListWeek(for indexPath: IndexPath) -> Event
     func deleteEvent(for indexPath: IndexPath)
     func showDetail(for indexPath: IndexPath)
+    func handleViewDidLoadFilter(filter: String)
+    func eventListFilter(for indexPath: IndexPath) -> Event
+    func eventListWeekFilter(for indexPath: IndexPath) -> Event
+    func getSort(name: Bool, date: Bool)
 }
 
 protocol ListInteractorOutput: class {

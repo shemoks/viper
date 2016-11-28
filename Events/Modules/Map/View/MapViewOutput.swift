@@ -14,6 +14,6 @@ protocol MapViewOutput {
     */
 
    // func viewIsReady()
-    func setCoordinates(lat: Double, long: Double)
+    func setCoordinates(lat: Double, long: Double, adress: String)
     func getData()
 }
